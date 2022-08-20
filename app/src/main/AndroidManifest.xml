@@ -23,9 +23,6 @@
             android:name=".Social.SocialInsideActivity"
             android:exported="false" />
         <activity
-            android:name=".Mypage"
-            android:exported="false" />
-        <activity
             android:name=".NotaionActivity"
             android:exported="false" />
         <activity
