@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding = "7dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="back"/>
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="공유하기"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/writeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="제목을 입력하세요"
+                android:background="@android:color/transparent"
+                android:paddingTop="5dp"
+                android:padding="5dp"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#474646"/>
+
+            <EditText
+                android:id="@+id/writeContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="내용을 입력하세요"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

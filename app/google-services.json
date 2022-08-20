@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "94172881766",
+    "firebase_url": "https://hanmo-b2293-default-rtdb.firebaseio.com",
+    "project_id": "hanmo-b2293",
+    "storage_bucket": "hanmo-b2293.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94172881766:android:673038cd93c364d5329ea7",
+        "android_client_info": {
+          "package_name": "com.jin.hanmo_board"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94172881766-jbinro7u9do5apclvn9rcie0h1a2i2h1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg_ALKo3-s-8oZ8Ovr2Ue8cmpIW6oZu-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94172881766-jbinro7u9do5apclvn9rcie0h1a2i2h1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

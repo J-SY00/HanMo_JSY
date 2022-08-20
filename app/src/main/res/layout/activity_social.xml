@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Board.SocialActivity"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding = "7dp">
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_user"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="user"/>
+
+            <ImageView
+                android:id="@+id/write"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_write"
+                android:layout_marginRight="20dp"
+                app:layout_constraintRight_toLeftOf="@+id/user"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/notation"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_notation"
+                android:layout_marginRight="20dp"
+                app:layout_constraintRight_toLeftOf="@+id/write"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/all_stroke"
+            android:layout_margin="8dp"
+            app:queryHint="검색어를 입력하세요"
+            app:iconifiedByDefault="false"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ContentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/board_recycler_model"/>
+    </LinearLayout>
+</layout>
